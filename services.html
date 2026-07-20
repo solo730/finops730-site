@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — FinOps730</title>
+<meta name="description" content="What FinOps730 covers: a 10-point AWS audit, ongoing cost monitoring, and a 5-day onboarding timeline.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="index.html" class="brand">finops<span class="accent">730</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="nav-cta">Book audit call</a>
+    </div>
+  </div>
+</nav>
+
+<section class="section-dark tight">
+  <div class="wrap">
+    <p class="eyebrow">Services</p>
+    <h1>One audit, then a standing watch on the bill</h1>
+    <p class="lede">Everything below is advisory. We read your cost and usage data through a scoped, white-labeled IAM role — we never get keys, console access, or the ability to change anything in your account.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">The audit</p>
+    <h2>A 10-point pass, prioritized by dollar impact</h2>
+    <p class="lede">Every engagement starts here. We connect a read-only, cross-account role, sync your cost and usage data, and run the full checklist below.</p>
+    <div class="checklist">
+      <div>Full cost breakdown by service, account, and region</div>
+      <div>Compute Optimizer rightsizing opportunities</div>
+      <div>CloudTrail event history review</div>
+      <div>IAM Access Analyzer findings</div>
+      <div>GuardDuty security findings relevant to spend</div>
+      <div>Unattached EBS volumes</div>
+      <div>Region sprawl across your account</div>
+      <div>IAM roles by last activity</div>
+      <div>Tagging compliance for cost allocation</div>
+      <div>AWS billing credits — anything expiring within 90 days flagged high priority</div>
+    </div>
+  </div>
+</section>
+
+<section class="section-raised">
+  <div class="wrap">
+    <p class="eyebrow">Onboarding</p>
+    <h2>Five business days from signature to delivered report</h2>
+    <div class="timeline" style="margin-top:32px;">
+      <div class="tl-step">
+        <div class="day">DAY 1</div>
+        <h4>Setup</h4>
+        <p>Advisory agreement signed, payment processed, scoped IAM role deployed via CloudFormation.</p>
+      </div>
+      <div class="tl-step">
+        <div class="day">DAY 2</div>
+        <h4>Sync</h4>
+        <p>Cost and usage data syncs fully — roughly 24 hours before analysis can begin.</p>
+      </div>
+      <div class="tl-step">
+        <div class="day">DAYS 3–4</div>
+        <h4>Analysis</h4>
+        <p>Full 10-point audit run, findings prioritized by savings and effort to fix.</p>
+      </div>
+      <div class="tl-step">
+        <div class="day">DAY 5</div>
+        <h4>Delivery</h4>
+        <p>Audit report delivered with a prioritized action plan — no infrastructure changes made on our end.</p>
+      </div>
+      <div class="tl-step">
+        <div class="day">ONGOING</div>
+        <h4>Monitoring</h4>
+        <p>Advisory + Monitoring clients get daily weekday checks, Monday–Friday, 9am–6pm ET.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Boundaries, on purpose</p>
+    <div class="grid-2">
+      <div class="card">
+        <span class="tag">What we do</span>
+        <ul>
+          <li>Read cost, usage, and configuration data via a scoped IAM role</li>
+          <li>Recommend rightsizing, Reserved Instances, and Savings Plans</li>
+          <li>Track AWS Activate credit expiry so you don't lose them</li>
+          <li>Flag security and tagging issues that affect cost visibility</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="tag">What we don't do</span>
+        <ul>
+          <li>Make changes inside your AWS account</li>
+          <li>Hold production credentials or console access</li>
+          <li>Recommend spot instances unless you've confirmed interruptible workloads</li>
+          <li>Exceed 10 advisory hours per week per engagement</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-dark">
+  <div class="wrap center">
+    <p class="eyebrow">Next step</p>
+    <h2>Get the audit before you sign anything else</h2>
+    <p class="lede" style="margin:0 auto 8px;">Most Activate credits we've seen expire quietly, unflagged. Start with a discovery call.</p>
+    <div class="cta-row" style="justify-content:center;">
+      <a href="contact.html" class="btn btn-primary">Book a discovery call →</a>
+      <a href="pricing.html" class="btn btn-ghost">See pricing</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h5>FinOps730</h5>
+        <div>Cloud cost advisory</div>
+        <div>for AWS-heavy startups</div>
+      </div>
+      <div class="footer-col">
+        <h5>Site</h5>
+        <div><a href="services.html">Services</a></div>
+        <div><a href="pricing.html">Pricing</a></div>
+        <div><a href="about.html">About</a></div>
+        <div><a href="contact.html">Contact</a></div>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <div><a href="mailto:finops730@gmail.com">finops730@gmail.com</a></div>
+        <div><a href="tel:+17189247891">718-924-7891</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    © 2026 FinOps730 LLC. Advisory services only — no infrastructure or billing access required.
+  </div>
+</footer>
+
+</body>
+</html>

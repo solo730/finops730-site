@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — FinOps730</title>
+<meta name="description" content="Book a discovery call with FinOps730 or send details about your AWS account setup.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="index.html" class="brand">finops<span class="accent">730</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="contact.html" class="nav-cta">Book audit call</a>
+    </div>
+  </div>
+</nav>
+
+<section class="section-dark tight">
+  <div class="wrap">
+    <p class="eyebrow">Contact</p>
+    <h1>Tell me about your AWS setup</h1>
+    <p class="lede">A few details up front — account count, rough monthly spend, whether you're sitting on Activate credits — lets the first call go straight to the useful part.</p>
+  </div>
+</section>
+
+<section class="section-dark tight">
+  <div class="wrap grid-2">
+    <form class="contact-form" action="https://formspree.io/f/xrenkkqw" method="POST">
+      <input type="hidden" name="_subject" value="New FinOps730 inquiry">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="Name" required>
+      </div>
+      <div>
+        <label for="company">Company</label>
+        <input type="text" id="company" name="Company" required>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="Email" required>
+      </div>
+      <div>
+        <label for="accounts">Number of AWS accounts</label>
+        <select id="accounts" name="AWS accounts">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4+</option>
+        </select>
+      </div>
+      <div>
+        <label for="spend">Approximate monthly AWS spend</label>
+        <select id="spend" name="Monthly spend">
+          <option>Under $5,000</option>
+          <option>$5,000 – $15,000</option>
+          <option>$15,000 – $50,000</option>
+          <option>$50,000+</option>
+        </select>
+      </div>
+      <div>
+        <label for="message">Anything else worth knowing</label>
+        <textarea id="message" name="Message" placeholder="e.g. holding AWS Activate credits, using Spot, cross-account roles already in place"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" style="justify-self:start;">Send →</button>
+    </form>
+
+    <div>
+      <div class="card-dark">
+        <span class="tag">Direct</span>
+        <h3>Prefer email or a call?</h3>
+        <p><a href="mailto:finops730@gmail.com">finops730@gmail.com</a></p>
+        <p><a href="tel:+17189247891">718-924-7891</a></p>
+        <p class="small" style="margin-top:16px;">Response within one business day. Discovery calls run 20–30 minutes and cover account count, spend, and whether Tier 1 or Tier 2 fits.</p>
+      </div>
+      <div class="card-dark" style="margin-top:20px;">
+        <span class="tag">Before we talk</span>
+        <p style="margin:0;">No infrastructure access is needed for the discovery call itself. If we move forward, onboarding starts with a scoped, read-only IAM role — never keys or console credentials.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h5>FinOps730</h5>
+        <div>Cloud cost advisory</div>
+        <div>for AWS-heavy startups</div>
+      </div>
+      <div class="footer-col">
+        <h5>Site</h5>
+        <div><a href="services.html">Services</a></div>
+        <div><a href="pricing.html">Pricing</a></div>
+        <div><a href="about.html">About</a></div>
+        <div><a href="contact.html">Contact</a></div>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <div><a href="mailto:finops730@gmail.com">finops730@gmail.com</a></div>
+        <div><a href="tel:+17189247891">718-924-7891</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    © 2026 FinOps730 LLC. Advisory services only — no infrastructure or billing access required.
+  </div>
+</footer>
+
+</body>
+</html>
